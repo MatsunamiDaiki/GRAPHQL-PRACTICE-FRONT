@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path='/signin' element={<GuestRoute children={<SignIn />} />} />
           <Route path='/signup' element={<GuestRoute children={<SignUp />} />}/>
-          <Route path='/' element={<PrivateRoute children={<Main />} />} />
+          <Route path='/' element={<GuestRoute children={<Main />} />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
